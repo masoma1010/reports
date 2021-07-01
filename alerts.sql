@@ -10,7 +10,6 @@ where a.ORIGINATING_TIMESTAMP > sysdate - 1
 and  (a.MESSAGE_TEXT like '%ORA-%'
 and upper(a.MESSAGE_TEXT) like '%ERROR%'
 and a.MESSAGE_TEXT not like 'TNS-12518%'
-and a.MESSAGE_TEXT not like 'cacatua%'
 and a.MESSAGE_TEXT not like 'Fatal NI%'
 and a.MESSAGE_TEXT not like 'Tns error%')
 /
